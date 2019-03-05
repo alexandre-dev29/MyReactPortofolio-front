@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 import PageHeader from './Components/PageHeader/PageHeader'
 import PagesNavbar from './Components/NavBar/Navbar'
+import AllRoutes from './Components/AllRoutes'
 
-import {  } from "reactstrap";
+import { BrowserRouter } from "react-router-dom";
 
 class App extends Component {
 
@@ -12,7 +13,11 @@ class App extends Component {
     return (
         <>
             <PagesNavbar />
+            <BrowserRouter>
+              <AllRoutes />
             <PageHeader />
+            </BrowserRouter>
+           
         </>
     );
   }

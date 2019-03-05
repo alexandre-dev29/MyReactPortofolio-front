@@ -122,23 +122,23 @@ class PagesNavbar extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">
+                <NavLink href="/Skills">
                   Skills & Experiences
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">
+                <NavLink href="/Works">
                  Works
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">
+                <NavLink href="/Resume">
                  Resume
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/">
-                 Contact
+                <NavLink href="/Contacts">
+                 Contacts
                 </NavLink>
               </NavItem>
             </Nav>
