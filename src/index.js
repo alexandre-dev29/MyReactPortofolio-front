@@ -8,6 +8,20 @@ import "./assets/css/blk-design-system-react.css";
 // import "assets/css/blk-design-system-react.css.map";
 import "./assets/css/nucleo-icons.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { BrowserRouter } from "react-router-dom";
+import AllRoutes from './Components/AllRoutes';
+import PagesNav from './Components/NavBar/Navbar';
+
+ReactDOM.render(
+    
+    <BrowserRouter>
+        <div>
+            <PagesNav />
+            <AllRoutes />
+        </div>
+    </BrowserRouter>
+,
+ document.getElementById('root')
+ );
 
 

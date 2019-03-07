@@ -8,7 +8,7 @@ import Resume from './Pages/Resumes/Resume';
 import Contacts from './Pages/Contacts/ContactsPage';
 
 const RouteContainer = posed.div({
-  enter: { opacity: 1, delay: 300, beforeChildren: true },
+  enter: { opacity: 1 },
   exit: { opacity: 0 }
 });
 
@@ -18,7 +18,7 @@ const AllRoutes = () => (
         <div>
             <div>
             <PoseGroup>
-                <RouteContainer key={location.key}>
+                <RouteContainer key={location.pathname}>
                 <Switch location={location}>
                     <Route exact path="/" component={Home} key="Home" />
                     <Route path="/Skills" component={Skills} key="Skills" />

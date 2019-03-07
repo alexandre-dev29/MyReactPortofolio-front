@@ -23,7 +23,7 @@ export default class PageHeader extends Component {
         <div className="squares square6" />
         <div className="squares square7" />
         <Container>
-        <div className="content-center">
+        <div className="content-center my-4">
               <Row className="row-grid justify-content-between align-items-center text-left">
                 <Col lg="6" md="6">
                   <h1 className="text-white text-center">

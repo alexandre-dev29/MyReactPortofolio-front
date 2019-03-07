@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Link, withRouter} from "react-router-dom";
 // reactstrap components
 import {
   Collapse,
@@ -14,6 +14,7 @@ import {
 } from "reactstrap";
 
 class PagesNavbar extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -60,9 +61,9 @@ class PagesNavbar extends React.Component {
       collapseOut: ""
     });
   };
+
   render() {
     return (
-      <Router>
         <Navbar
         className={"fixed-top " + this.state.color}
         color-on-scroll="100"
@@ -100,7 +101,7 @@ class PagesNavbar extends React.Component {
             <div className="navbar-collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
+                  <a href="#">
                    Axel Mwenze
                   </a>
                 </Col>
@@ -122,22 +123,22 @@ class PagesNavbar extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Skills">
+                <NavLink tag={Link} to="Skills">
                   Skills & Experiences
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Works">
+                <NavLink tag={Link} to="Works">
                  Works
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Resume">
+                <NavLink tag={Link} to="Resume">
                  Resume
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Contacts">
+                <NavLink tag={Link} to="Contacts">
                  Contacts
                 </NavLink>
               </NavItem>
@@ -145,8 +146,6 @@ class PagesNavbar extends React.Component {
           </Collapse>
         </Container>
       </Navbar>
-    
-      </Router>
     );
   }
 }
