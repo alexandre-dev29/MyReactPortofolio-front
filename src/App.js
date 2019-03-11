@@ -1,16 +1,8 @@
-import React, { Component } from 'react';
-const alexandre  = process.env.API_URL;
+import React, { Component } from "react";
 
 class App extends Component {
-
-
   render() {
-    return (
-      <div>
-        
-      </div>
-           
-    );
+    return <div />;
   }
 }
 

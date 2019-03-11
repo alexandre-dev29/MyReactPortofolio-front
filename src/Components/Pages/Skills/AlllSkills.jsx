@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import { Row, Col } from "reactstrap";
-
 import HeaderSkill from "./headerSkill";
 
 export default class AlllSkills extends Component {
@@ -21,7 +19,7 @@ export default class AlllSkills extends Component {
   render() {
     return (
       <div>
-        <div className="page-header">
+        <div className="header-filter">
           <HeaderSkill />
         </div>
       </div>
