@@ -12,8 +12,12 @@ import { BrowserRouter } from "react-router-dom";
 import AllRoutes from './Components/AllRoutes';
 import PagesNav from './Components/NavBar/Navbar';
 
+require('dotenv').config();
+const alexandre  = process.env;
+
+console.log(alexandre);
+
 ReactDOM.render(
-    
     <BrowserRouter>
         <div>
             <PagesNav />
