@@ -9,7 +9,7 @@ import Contacts from "./Pages/Contacts/ContactsPage";
 
 const RouteContainer = posed.div({
   enter: { opacity: 1 },
-  exit: { opacity: 0 }
+  exit: { opacity: 0}
 });
 
 const AllRoutes = () => (

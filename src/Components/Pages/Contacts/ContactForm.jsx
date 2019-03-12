@@ -19,12 +19,9 @@ class ContactForm extends Component {
         return (
             <div>
                 <Card className="card-register">
-                    <CardHeader>
-                        <CardImg
-                            alt="..."
-                            src={require("../../../assets/img/square-purple-1.png")}
-                        />
-                        <CardTitle tag="h4">Register</CardTitle>
+                    <CardHeader className="text-center">
+
+                        <CardTitle tag="h3" className="text-primary">Contact Me</CardTitle>
                     </CardHeader>
                     <CardBody>
                         <Form className="form">
@@ -91,9 +88,10 @@ class ContactForm extends Component {
                             </FormGroup>
                         </Form>
                     </CardBody>
-                    <CardFooter>
+                    <CardFooter className="text-center">
                         <Button className="btn-round" color="primary" size="lg">
-                            Get Started
+                            <i className="tim-icons tim-icons-lg icon-send " />
+                            Send
                         </Button>
                     </CardFooter>
                 </Card>
