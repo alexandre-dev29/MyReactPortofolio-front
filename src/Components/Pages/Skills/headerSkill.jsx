@@ -29,7 +29,6 @@ export default class headerSkill extends Component {
                   <Skill title="Game Developpement" />
                   <Skill title="Software Developpement" />
                   <Skill title="UI/UX Developpement" />
-                  <Skill title="UI/UX Developpement" />
                 </div>
               </div>
             </div>
