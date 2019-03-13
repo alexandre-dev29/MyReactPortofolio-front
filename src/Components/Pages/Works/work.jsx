@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import '../../../assets/css/mycss.css'
 
 export default class work extends Component {
   render() {
     return (
-      <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className="col-lg-4 col-md-6 col-sm-12 work-animate">
         <div className="card card-cascade wider reverse my-4">
           <div className="view overlay hm-white-slight">
             <img

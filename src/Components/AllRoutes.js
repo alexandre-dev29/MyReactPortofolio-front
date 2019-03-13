@@ -8,7 +8,7 @@ import Resume from "./Pages/Resumes/Resume";
 import Contacts from "./Pages/Contacts/ContactsPage";
 
 const RouteContainer = posed.div({
-  enter: { opacity: 1 },
+  enter: { opacity: 1, delay: 300 },
   exit: { opacity: 0}
 });
 
