@@ -2,8 +2,53 @@ import React, { Component } from "react";
 import "../../../assets/css/mycss.css"
 import Works from "./work";
 
+const all_works = [
+    {
+        id:1,
+        work_title: "My Portofolio",
+        work_categorie: "Web Developpement",
+        work_image:"../../assets/img/project.jpg",
+        work_description: "This project of portofolio",
+        work_link: "http://google.com"
+    },
+    {
+        id:2,
+        work_title: "My Portofolio",
+        work_categorie: "Web Developpement",
+        work_image:"../../assets/img/project.jpg",
+        work_description: "This project of portofolio",
+        work_link: "http://google.com"
+    },
+    {
+        id:3,
+        work_title: "My Portofolio",
+        work_categorie: "Web Developpement",
+        work_image:"/src/assets/img/project.jpg",
+        work_description: "This project of portofolio",
+        work_link: "http://google.com"
+    },
+    {
+        id:4,
+        work_title: "My Portofolio",
+        work_categorie: "Web Developpement",
+        work_image:"../../assets/img/project.jpg",
+        work_description: "This project of portofolio",
+        work_link: "http://google.com"
+    },
+    {
+        id:5,
+        work_title: "My Portofolio",
+        work_categorie: "Web Developpement",
+        work_image:"../../assets/img/project.jpg",
+        work_description: "This project of portofolio",
+        work_link: "http://google.com"
+    },
+
+];
+
 export default class AllWorks extends Component {
-  componentDidMount() {
+
+    componentDidMount() {
     document.body.classList.toggle("index-page");
   }
 
@@ -27,34 +72,17 @@ export default class AllWorks extends Component {
                     Works
                   </h1>
                   <div className="row justify-content-start">
-                    <Works
-                      title="My Adventure"
-                      Categorie="Photography"
-                      description=" Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam."
-                    link="https://google.com"
-                    />
-                    <Works
-                      title="My Adventure"
-                      Categorie="Photography"
-                      description=" Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam."
-                    link="https://google.com"
-                    />
-                    <Works
-                      title="My Adventure"
-                      Categorie="Photography"
-                      description=" Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam."
-                    link="https://google.com"
-                    />
-                    <Works
-                      title="My Adventure"
-                      Categorie="Photography"
-                      description=" Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam."
-                    link="https://google.com"
-                    />
+                      {all_works.map(work => { return (
+                          <Works
+                              key={work.id}
+                              title={work.work_title}
+                              Categorie={work.work_categorie}
+                              description={work.work_description}
+                              link={work.work_link}
+                              image={work.work_image}
+                          />)
+                      })}
+
                   </div>
                 </div>
               </div>
