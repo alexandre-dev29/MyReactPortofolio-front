@@ -134,7 +134,7 @@ class PagesNavbar extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink tag={Link} to="Resume">
-                 Resume
+                 Read Me
                 </NavLink>
               </NavItem>
               <NavItem>

@@ -26,7 +26,7 @@ export default class headerSkill extends Component {
                 <h1 className="text-center text-info mt-lg">Skills</h1>
                 <div className="row justify-content-start">
                     {this.props.all_skills.map(skill => (
-                        <Skill title={skill.skill_categorie} innerskill={skill.skills} />
+                        <Skill title={skill.skill_categorie} color={skill.main_color} innerskill={skill.skills} />
                     ))}
                 </div>
               </div>

@@ -5,7 +5,7 @@ import Works from "./work";
 const all_works = [
     {
         id:1,
-        work_title: "My Portofolio",
+        work_title: "My Portofolio Frontend",
         work_categorie: "Web Developpement",
         work_image:"../../assets/img/project.jpg",
         work_description: "This project of portofolio",
@@ -13,7 +13,7 @@ const all_works = [
     },
     {
         id:2,
-        work_title: "My Portofolio",
+        work_title: "My Portofolio backend",
         work_categorie: "Web Developpement",
         work_image:"../../assets/img/project.jpg",
         work_description: "This project of portofolio",
@@ -21,7 +21,7 @@ const all_works = [
     },
     {
         id:3,
-        work_title: "My Portofolio",
+        work_title: "Login System",
         work_categorie: "Web Developpement",
         work_image:"/src/assets/img/project.jpg",
         work_description: "This project of portofolio",
@@ -29,7 +29,7 @@ const all_works = [
     },
     {
         id:4,
-        work_title: "My Portofolio",
+        work_title: "Facial recognition",
         work_categorie: "Web Developpement",
         work_image:"../../assets/img/project.jpg",
         work_description: "This project of portofolio",
@@ -37,7 +37,7 @@ const all_works = [
     },
     {
         id:5,
-        work_title: "My Portofolio",
+        work_title: "Invoice managements",
         work_categorie: "Web Developpement",
         work_image:"../../assets/img/project.jpg",
         work_description: "This project of portofolio",

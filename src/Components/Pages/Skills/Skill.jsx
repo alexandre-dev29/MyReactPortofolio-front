@@ -9,11 +9,11 @@ export default class Skill extends Component {
           <div className="icon icon-success ml-5">
             <i className="tim-icons icon-money-coins" />
           </div>
-          <h4 className="info-title text-primary">{this.props.title}</h4>
+          <h4 className={"info-title " + this.props.color}>{this.props.title}</h4>
           <hr className="line-primary" />
             {this.props.innerskill.map((inner, index) => (
-                <div className="progress-container progress-primary">
-                    <span className="progress-badge text-info">{inner.skill_title}</span>
+                <div className={"progress-container progress-"+ inner.skill_color}>
+                    <span className={"progress-badge text-white"}>{inner.skill_title}</span>
                     <Progress max="100" value={inner.skill_percent}>
                         <span className="progress-value">{inner.skill_percent}%</span>
                     </Progress>

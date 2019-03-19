@@ -4,19 +4,19 @@ import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 
 const carouselItems = [
 {
-  src: require("../../../assets/img/denys.jpg"),
+  src: require("../../../assets/img/carousel/fourth.jpg"),
   altText: "Slide 1",
-  caption: "Big City Life, United States"
+  caption: ""
 },
 {
-  src: require("../../../assets/img/fabien-bazanegue.jpg"),
+  src: require("../../../assets/img/carousel/fifth.jpg"),
   altText: "Slide 2",
-  caption: "Somewhere Beyond, United States"
+  caption: ""
 },
 {
-  src: require("../../../assets/img/mark-finn.jpg"),
+  src: require("../../../assets/img/carousel/third.jpg"),
   altText: "Slide 3",
-  caption: "Stocks, United States"
+  caption: ""
 }
 ];
 
@@ -35,10 +35,7 @@ export default class AboutPage extends Component {
                 <Col md="5">
                   <h1 className="profile-title text-left">About Me</h1>
                   <p className="profile-description text-left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Impedit in minus, atque dolores temporibus aut, 
-                    fugiat omnis assumenda rerum dolore odio nam labore 
-                    voluptatum sunt tempora corrupti, tenetur iste soluta?
+                    I am a passionate software Engineer and fullstack web developer
                   </p>
                   
                 </Col>

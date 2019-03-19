@@ -30,24 +30,12 @@ export default class PageHeader extends Component {
                     I Am Axel Mwenze<br />
                   </h1>
                   <p className="text-white mb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Error maxime dicta maiores modi itaque. 
-                    Eligendi, quam perspiciatis harum amet laudantium neque 
-                    dignissimos repellat veniam? Dolore, 
-                    inventore exercitationem? Magnam, quia laboriosam.
+                   I am a software engineer passionate in coding and sharing what i know.
                   </p>
                   <div className="btn-wrapper mb-3">
-                    <p className="category text-success d-inline">
-                      From 9.99%/mo
-                    </p>
-                    <Button
-                      className="btn-link"
-                      color="success"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      <i className="tim-icons icon-minimal-right" />
+                    <Button className="btn btn-primary">
+                        <i className="tim-icons icon-cloud-download-93" />
+                     Download Resume
                     </Button>
                   </div>
                   <div className="btn-wrapper">
@@ -55,19 +43,28 @@ export default class PageHeader extends Component {
                       <Button
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
-                        href="#pablo"
+                        href="https://www.linkedin.com/in/axel-mwenze-63711616b/"
                         onClick={e => e.preventDefault()}
                       >
-                        <i className="fab fa-twitter" />
+                        <i className="fab fa-linkedin" />
                       </Button>
                       <Button
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
-                        href="#pablo"
+                        href="https://gitlab.com/alexandre2908"
                         onClick={e => e.preventDefault()}
                       >
-                        <i className="fab fa-dribbble" />
+                        <i className="fab fa-gitlab" />
                       </Button>
+                       <Button
+                        className="btn-icon btn-simple btn-round btn-neutral"
+                        color="default"
+                        href="https://github.com/alexandre-dev29"
+                        onClick={e => e.preventDefault()}
+                      >
+                        <i className="fab fa-github" />
+                      </Button>
+
                       <Button
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
@@ -76,14 +73,22 @@ export default class PageHeader extends Component {
                       >
                         <i className="fab fa-facebook" />
                       </Button>
+                        <Button
+                            className="btn-icon btn-simple btn-round btn-neutral"
+                            color="default"
+                            href="https://medium.com/@axel.mwenze"
+                            onClick={e => e.preventDefault()}
+                        >
+                            <i className="fab fa-medium" />
+                        </Button>
                     </div>
                   </div>
                 </Col>
-                <Col lg="4" md="5">
+                <Col lg="5" md="5">
                   <img
                     alt="..."
                     className="img-fluid"
-                    src={require("../../assets/img/ryan.jpg")}
+                    src={require("../../assets/img/main_photo.jpg")}
                   />
                 </Col>
               </Row>

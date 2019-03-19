@@ -6,69 +6,85 @@ import Experience from './experience'
 const all_skills = [
     {
         skill_categorie: "Frontend Developpement",
+        main_color:"text-success",
         skills: [
             {
                 skill_title: "Javascript",
-                skill_percent: "80"
+                skill_percent: "80",
+                skill_color: "warning"
             },
             {
                 skill_title: "React",
-                skill_percent: "80"
+                skill_percent: "75",
+                skill_color: "info"
             },
             {
                 skill_title: "Angular",
-                skill_percent: "80"
+                skill_percent: "80",
+                skill_color: "danger"
             },
             {
                 skill_title: "Html, Css",
-                skill_percent: "80"
+                skill_percent: "90",
+                skill_color: "info"
             },
         ]
     },
     {
         skill_categorie: "Backend Developpement",
+        main_color:"text-info",
         skills: [
             {
                 skill_title: "NodeJs",
-                skill_percent: "80"
+                skill_percent: "75",
+                skill_color: "success"
             },
             {
                 skill_title: "ExpressJs",
-                skill_percent: "80"
+                skill_percent: "70",
+                skill_color: "info"
             },
             {
                 skill_title: "PHP",
-                skill_percent: "80"
+                skill_percent: "85",
+                skill_color: "info"
             },
             {
                 skill_title: "Laravel",
-                skill_percent: "80"
+                skill_percent: "60",
+                skill_color: "warning"
             },
         ]
     },
     {
         skill_categorie: "Software Developpement",
+        main_color:"text-warning",
         skills: [
             {
                 skill_title: "Python",
-                skill_percent: "80"
+                skill_percent: "75",
+                skill_color:"warning"
             },
             {
                 skill_title: "Java SE & JavaFx",
-                skill_percent: "80"
+                skill_percent: "85",
+                skill_color:"info"
             },
         ]
     },
     {
         skill_categorie: "Game Developpement",
+        main_color:"text-primary",
         skills: [
             {
                 skill_title: "Unity",
-                skill_percent: "80"
+                skill_percent: "60",
+                skill_color: "info"
             },
             {
                 skill_title: "Unreal Engine",
-                skill_percent: "80"
+                skill_percent: "70",
+                skill_color: "info"
             },
         ]
     },
@@ -77,15 +93,18 @@ const all_skills = [
         skills: [
             {
                 skill_title: "Photoshop",
-                skill_percent: "80"
+                skill_percent: "60",
+                skill_color: "warning"
             },
             {
                 skill_title: "Adobe Xd",
-                skill_percent: "80"
+                skill_percent: "55",
+                skill_color: "warning"
             },
             {
                 skill_title: "Adobe Illustrator",
-                skill_percent: "80"
+                skill_percent: "50",
+                skill_color: "warning"
             },
 
         ]
