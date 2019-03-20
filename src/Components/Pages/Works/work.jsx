@@ -34,7 +34,7 @@ export default class work extends Component {
         <div className="card card-cascade wider reverse my-4">
           <div className="view overlay hm-white-slight">
             <img
-              src={require("../../../assets/img/project.jpg")}
+              src={process.env.REACT_APP_API_URL+ "/" + this.props.image}
               className="img-fluid"
               alt="..."
             />

@@ -40,47 +40,41 @@ export default class PageHeader extends Component {
                   </div>
                   <div className="btn-wrapper">
                     <div className="button-container">
-                      <Button
+                      <a
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
                         href="https://www.linkedin.com/in/axel-mwenze-63711616b/"
-                        onClick={e => e.preventDefault()}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i className="fab fa-linkedin" />
-                      </Button>
-                      <Button
+                      </a>
+                      <a
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
                         href="https://gitlab.com/alexandre2908"
-                        onClick={e => e.preventDefault()}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i className="fab fa-gitlab" />
-                      </Button>
-                       <Button
+                      </a>
+                       <a
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
                         href="https://github.com/alexandre-dev29"
-                        onClick={e => e.preventDefault()}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <i className="fab fa-github" />
-                      </Button>
-
-                      <Button
-                        className="btn-icon btn-simple btn-round btn-neutral"
-                        color="default"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className="fab fa-facebook" />
-                      </Button>
-                        <Button
-                            className="btn-icon btn-simple btn-round btn-neutral"
-                            color="default"
+                      </a>
+                        <a
+                            className="btn-icon btn-simple btn-round btn-neutral default"
                             href="https://medium.com/@axel.mwenze"
-                            onClick={e => e.preventDefault()}
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <i className="fab fa-medium" />
-                        </Button>
+                        </a>
                     </div>
                   </div>
                 </Col>

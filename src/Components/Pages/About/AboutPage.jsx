@@ -1,24 +1,6 @@
 import React, { Component } from 'react'
 
-import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
-
-const carouselItems = [
-{
-  src: require("../../../assets/img/carousel/fourth.jpg"),
-  altText: "Slide 1",
-  caption: ""
-},
-{
-  src: require("../../../assets/img/carousel/fifth.jpg"),
-  altText: "Slide 2",
-  caption: ""
-},
-{
-  src: require("../../../assets/img/carousel/third.jpg"),
-  altText: "Slide 3",
-  caption: ""
-}
-];
+import { Container, Row, Col} from "reactstrap";
 
 export default class AboutPage extends Component {
   render() {
@@ -29,7 +11,7 @@ export default class AboutPage extends Component {
               <Row className="justify-content-between">
                 <Col md="6">
                   <Row className="justify-content-between align-items-center">
-                    <UncontrolledCarousel items={carouselItems} />
+                    <img src={require("../../../assets/img/carousel/fifth.jpg")} alt="..."  className="img-fluid"/>
                   </Row>
                 </Col>
                 <Col md="5">
@@ -37,7 +19,6 @@ export default class AboutPage extends Component {
                   <p className="profile-description text-left">
                     I am a passionate software Engineer and fullstack web developer
                   </p>
-                  
                 </Col>
               </Row>
             </Container>

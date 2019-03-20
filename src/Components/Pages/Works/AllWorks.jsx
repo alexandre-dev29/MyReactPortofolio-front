@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "../../../assets/css/mycss.css"
 import Works from "./work";
+import {ApiCall} from "../../../Utils/ApiConfig";
 
+const work_path = process.env.REACT_APP_API_URL + "/works";
 const all_works = [
     {
         id:1,
@@ -48,8 +50,27 @@ const all_works = [
 
 export default class AllWorks extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            all_works: []
+        }
+    }
+
+
     componentDidMount() {
     document.body.classList.toggle("index-page");
+    ApiCall.get(work_path+"/get_works", {
+        params : {
+            "user_email": process.env.REACT_APP_EMAIL_CONFIG,
+        }
+    }).then(res => {
+        console.log(res.data.all_data);
+        this.setState({
+            all_works: res.data.all_data
+        })
+    });
+
   }
 
   componentWillUnmount() {
@@ -72,14 +93,14 @@ export default class AllWorks extends Component {
                     Works
                   </h1>
                   <div className="row justify-content-start">
-                      {all_works.map(work => { return (
+                      {this.state.all_works.map(work => { return (
                           <Works
-                              key={work.id}
+                              key={work._id}
                               title={work.work_title}
-                              Categorie={work.work_categorie}
+                              Categorie={work.work_category}
                               description={work.work_description}
                               link={work.work_link}
-                              image={work.work_image}
+                              image={work.work_images}
                           />)
                       })}
 
