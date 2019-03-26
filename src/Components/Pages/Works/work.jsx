@@ -9,7 +9,8 @@ export default class work extends Component {
         super(props);
         this.state = {
             demoModal: false,
-            modal_selected: {}
+            modal_selected: {},
+            isLoading: false
         }
     }
 
@@ -18,7 +19,9 @@ export default class work extends Component {
             modal_selected: {
                 title: props.title,
                 description: props.description,
-                image:props.image
+                image:props.image,
+                categorie: props.Categorie,
+                link: props.link
             }
         });
         this.setState({
@@ -38,7 +41,7 @@ export default class work extends Component {
               className="img-fluid"
               alt="..."
             />
-            <a href="http://google.com">
+            <a href={modal_selected.link} target="_blank" rel="noopener noreferrer">
               <div className="mask" />
             </a>
           </div>
@@ -52,11 +55,11 @@ export default class work extends Component {
             </h5>
 
             <p className="card-text">
-                {this.props.description}
+                {this.props.lightdesc}
             </p>
 
-              <a className="btn btn-primary text-white"
-                 onClick={() => this.toggleModal("demoModal",this.props)}>Read More</a>
+              <a href="" className="btn btn-primary text-white"
+                  onClick={() => this.toggleModal("demoModal",this.props)}>Read More</a>
           </div>
         </div>
 
@@ -73,18 +76,20 @@ export default class work extends Component {
                   >
                       <i className="tim-icons icon-simple-remove" />
                   </button>
-                  <h4 className="title title-up">{modal_selected.title}</h4>
+                  <h4 className="title title-up text-info">{modal_selected.title}</h4>
+
               </div>
               <div className="modal-body">
                   <div className="row row-grid justify-content-lg-between">
                     <div className="col-lg-6">
                         <img
-                            src={require("../../../assets/img/project.jpg")}
+                            src={process.env.REACT_APP_API_URL+ "/" + modal_selected.image}
                             className="img-fluid"
                             alt="..."
                         />
                     </div>
                     <div className="col-lg-6">
+                        <h4 className="text-success title-up">{modal_selected.categorie}</h4>
                         <p>
                             {modal_selected.description}
                         </p>
@@ -93,9 +98,9 @@ export default class work extends Component {
 
               </div>
               <div className="modal-footer">
-                  <Button color="default" type="button">
-                      Nice Button
-                  </Button>
+                  <a className="btn btn-info" href={modal_selected.link} target="_blank" rel="noopener noreferrer">
+                      Visit
+                  </a>
                   <Button
                       color="danger"
                       type="button"

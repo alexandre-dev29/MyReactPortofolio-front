@@ -4,7 +4,7 @@ import Works from "./work";
 import {ApiCall} from "../../../Utils/ApiConfig";
 
 const work_path = process.env.REACT_APP_API_URL + "/works";
-const all_works = [
+/*const all_works = [
     {
         id:1,
         work_title: "My Portofolio Frontend",
@@ -46,14 +46,15 @@ const all_works = [
         work_link: "http://google.com"
     },
 
-];
+];*/
 
 export default class AllWorks extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            all_works: []
+            all_works: [],
+            isLoading: false
         }
     }
 
@@ -65,9 +66,10 @@ export default class AllWorks extends Component {
             "user_email": process.env.REACT_APP_EMAIL_CONFIG,
         }
     }).then(res => {
-        console.log(res.data.all_data);
+        console.log(res);
         this.setState({
-            all_works: res.data.all_data
+            all_works: res.data.all_data,
+            isLoading: true
         })
     });
 
@@ -78,7 +80,6 @@ export default class AllWorks extends Component {
   }
   render() {
     return (
-
         <div className="header-filter">
           <div className="squares square1" />
           <div className="squares square3" />
@@ -92,19 +93,25 @@ export default class AllWorks extends Component {
                   <h1 className="text-primary text-center mt-lg display-3">
                     Works
                   </h1>
-                  <div className="row justify-content-start">
-                      {this.state.all_works.map(work => { return (
-                          <Works
-                              key={work._id}
-                              title={work.work_title}
-                              Categorie={work.work_category}
-                              description={work.work_description}
-                              link={work.work_link}
-                              image={work.work_images}
-                          />)
-                      })}
+                    {!this.state.isLoading ?
+                        <div className="row justify-content-center">
+                            <img src={require("../../../assets/img/Loading/loading_infinity.svg")} alt="loading works" />
+                        </div>:
+                        <div className="row justify-content-start">
+                            {this.state.all_works.map(work => { return (
+                            <Works
+                                key={work._id}
+                                title={work.work_title}
+                                Categorie={work.work_category}
+                                description={work.work_description}
+                                lightdesc={work.work_lightdesc}
+                                link={work.work_link}
+                                image={work.work_images}
+                            />)
+                        })}
+                        </div>
+                    }
 
-                  </div>
                 </div>
               </div>
             </div>

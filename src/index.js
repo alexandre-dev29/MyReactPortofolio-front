@@ -10,6 +10,8 @@ import "./assets/css/nucleo-icons.css";
 import { BrowserRouter } from "react-router-dom";
 import AllRoutes from './Components/AllRoutes';
 import PagesNav from './Components/NavBar/Navbar';
+
+import "./App.css"
 require('dotenv').config();
 
 ReactDOM.render(

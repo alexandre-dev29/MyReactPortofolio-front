@@ -1,8 +1,15 @@
 .work-animate{
     animation-name: EnterDescription;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: backwards;
+}
+.progress_skill:hover{
+   animation-name: scalling;
+    animation-duration: .9s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+    z-index: 5;
 }
 .work-animate:nth-child(1) {animation-delay: 0.0s; }
 .work-animate:nth-child(2) {animation-delay: 0.5s; }
@@ -12,11 +19,19 @@
 @keyframes EnterDescription {
     0% {
         opacity: 0;
-        transform: translateX(-200px) scale(1.2);
+        transform: translateX(-100px) scale(1.1);
 
     }
     100%{
         opacity: 1;
         transform: translateX(0);
+    }
+}
+@keyframes scalling {
+    0%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
     }
 }

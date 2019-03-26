@@ -29,9 +29,9 @@ export default class PageHeader extends Component {
                   <h1 className="text-white text-center">
                     I Am Axel Mwenze<br />
                   </h1>
-                  <p className="text-white mb-3">
-                   I am a software engineer passionate in coding and sharing what i know.
-                  </p>
+                  <h4 className="text-white mb-3 text-center">
+                   I am a software engineer Passionate in Software And Web development.
+                  </h4>
                   <div className="btn-wrapper mb-3">
                     <Button className="btn btn-primary">
                         <i className="tim-icons icon-cloud-download-93" />

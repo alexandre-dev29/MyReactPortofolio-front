@@ -6,12 +6,12 @@ import Experience from './experience'
 const all_skills = [
     {
         skill_categorie: "Frontend Developpement",
-        main_color:"text-success",
+        main_color:"text-white",
         skills: [
             {
                 skill_title: "Javascript",
                 skill_percent: "80",
-                skill_color: "warning"
+                skill_color: "info"
             },
             {
                 skill_title: "React",
@@ -21,7 +21,7 @@ const all_skills = [
             {
                 skill_title: "Angular",
                 skill_percent: "80",
-                skill_color: "danger"
+                skill_color: "info"
             },
             {
                 skill_title: "Html, Css",
@@ -32,7 +32,7 @@ const all_skills = [
     },
     {
         skill_categorie: "Backend Developpement",
-        main_color:"text-info",
+        main_color:"text-white",
         skills: [
             {
                 skill_title: "NodeJs",
@@ -42,23 +42,23 @@ const all_skills = [
             {
                 skill_title: "ExpressJs",
                 skill_percent: "70",
-                skill_color: "info"
+                skill_color: "success"
             },
             {
                 skill_title: "PHP",
                 skill_percent: "85",
-                skill_color: "info"
+                skill_color: "success"
             },
             {
                 skill_title: "Laravel",
                 skill_percent: "60",
-                skill_color: "warning"
+                skill_color: "success"
             },
         ]
     },
     {
         skill_categorie: "Software Developpement",
-        main_color:"text-warning",
+        main_color:"text-white",
         skills: [
             {
                 skill_title: "Python",
@@ -68,13 +68,13 @@ const all_skills = [
             {
                 skill_title: "Java SE & JavaFx",
                 skill_percent: "85",
-                skill_color:"info"
+                skill_color:"warning"
             },
         ]
     },
     {
         skill_categorie: "Game Developpement",
-        main_color:"text-primary",
+        main_color:"text-white",
         skills: [
             {
                 skill_title: "Unity",
@@ -113,32 +113,22 @@ const all_skills = [
 
 const all_experiences= [
     {
-        experience_title: "Senior developer ",
+        experience_title: "Freelance  Web Developer at Wikisuit Groupware",
         experience_periode: "July, 2013 - Present (4 years)",
         experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
     },
     {
-        experience_title: "Senior developer ",
+        experience_title: "Consultant at Bralima SARL  ",
         experience_periode: "July, 2013 - Present (4 years)",
         experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
     },
     {
-        experience_title: "Senior developer ",
+        experience_title: "Game Developer At Badzone studio ",
         experience_periode: "July, 2013 - Present (4 years)",
         experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
     },
     {
-        experience_title: "Senior developer ",
-        experience_periode: "July, 2013 - Present (4 years)",
-        experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
-    },
-    {
-        experience_title: "Senior developer ",
-        experience_periode: "July, 2013 - Present (4 years)",
-        experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
-    },
-    {
-        experience_title: "Senior developer ",
+        experience_title: "Software Developer at Gecamine S.A",
         experience_periode: "July, 2013 - Present (4 years)",
         experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
     },
