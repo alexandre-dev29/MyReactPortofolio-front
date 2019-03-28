@@ -12,7 +12,7 @@ const api_key = all_env.REACT_APP_API_KEY;
 export const ApiCall = axios.create({
     baseURL: baseUrl,
     headers: {
-        api_key:api_key
+        Authorization:api_key
     }
 });
 

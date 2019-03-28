@@ -58,8 +58,8 @@ export default class work extends Component {
                 {this.props.lightdesc}
             </p>
 
-              <a href="" className="btn btn-primary text-white"
-                  onClick={() => this.toggleModal("demoModal",this.props)}>Read More</a>
+              <button className="btn btn-primary text-white"
+                  onClick={() => this.toggleModal("demoModal",this.props)}>Read More</button>
           </div>
         </div>
 
