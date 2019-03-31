@@ -4,7 +4,7 @@ import posed, { PoseGroup } from "react-pose";
 import Home from "./Pages/Home/Home";
 import Skills from "./Pages/Skills/AlllSkills";
 import Works from "./Pages/Works/AllWorks";
-import Resume from "./Pages/Resumes/Resume";
+import Readme from "./Pages/ReadMe/Readme";
 import Contacts from "./Pages/Contacts/ContactsPage";
 
 const RouteContainer = posed.div({
@@ -23,7 +23,7 @@ const AllRoutes = () => (
                 <Route exact path="/" component={Home} key="Home" />
                 <Route path="/Skills" component={Skills} key="Skills" />
                 <Route path="/Works" component={Works} key="Works" />
-                <Route path="/Resume" component={Resume} key="Resume" />
+                <Route path="/Resume" component={Readme} key="Resume" />
                 <Route path="/Contacts" component={Contacts} key="Contacts" />
               </Switch>
             </RouteContainer>

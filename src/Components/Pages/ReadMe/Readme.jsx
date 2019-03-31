@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 
 import { Row, Col, Button } from "reactstrap";
+import Skill from "../Skills/Skill";
+import Works from "../Works/work";
+import Article from "./Article";
 
-export default class Resume extends Component {
+export default class Readme extends Component {
 
   componentDidMount() {
     document.body.classList.toggle("landing-page");
@@ -44,34 +47,23 @@ export default class Resume extends Component {
               className="shapes circle"
               src={require("../../../assets/img/cercuri.png")}
             />
-            <div className="content-center">
-              <Row className="row-grid justify-content-between align-items-center text-left">
-                <Col lg="12" md="12">
-                  <h1 className="text-white text-center">
-                    This is the Resume page
-                  </h1>
-                  <p className="text-white mb-3 text-center">
-                    A wonderful serenity has taken possession of my entire soul,
-                    like these sweet mornings of spring which I enjoy with my
-                    whole heart. I am alone, and feel...
-                  </p>
-                  <div className="btn-wrapper mb-3">
-                    <p className="category text-success d-inline">
-                      From 9.99%/mo
-                    </p>
-                    <Button
-                      className="btn-link"
-                      color="success"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      <i className="tim-icons icon-minimal-right" />
-                    </Button>
-                  </div>
-                  </Col>
-                </Row>
-            </div>
+            <section className="section section-lg">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-12">
+                            <h1 className="text-info text-center mt-lg display-3">
+                                Articles
+                            </h1>
+                            <div className="row justify-content-start">
+                               <Article/>
+                               <Article/>
+                               <Article/>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
           </div>
       
       </div>

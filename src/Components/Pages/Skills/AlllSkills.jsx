@@ -5,7 +5,7 @@ import Experience from './experience'
 
 const all_skills = [
     {
-        skill_categorie: "Frontend Developpement",
+        skill_categorie: "Frontend Development",
         main_color:"text-white",
         skills: [
             {
@@ -31,7 +31,7 @@ const all_skills = [
         ]
     },
     {
-        skill_categorie: "Backend Developpement",
+        skill_categorie: "Backend Development",
         main_color:"text-white",
         skills: [
             {
@@ -57,7 +57,7 @@ const all_skills = [
         ]
     },
     {
-        skill_categorie: "Software Developpement",
+        skill_categorie: "Software Development",
         main_color:"text-white",
         skills: [
             {
@@ -73,7 +73,23 @@ const all_skills = [
         ]
     },
     {
-        skill_categorie: "Game Developpement",
+        skill_categorie: "Mobile Development",
+        skills: [
+            {
+                skill_title: "React Native",
+                skill_percent: "65",
+                skill_color: "warning"
+            },
+            {
+                skill_title: "Java",
+                skill_percent: "70",
+                skill_color: "warning"
+            },
+
+        ]
+    },
+    {
+        skill_categorie: "Game Development",
         main_color:"text-white",
         skills: [
             {
