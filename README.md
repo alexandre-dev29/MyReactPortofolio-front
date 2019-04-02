@@ -22,6 +22,13 @@ This portofolio take data from its Api you can see the backend project here :
 ```sh
 https://github.com/alexandre-dev29/MyReactPortofolio-back.git
 ```
+
+and then you will need to create an .env file and paste different values:
+```sh
+REACT_APP_API_KEY="API_KEY paste the same as the backend key"
+REACT_APP_API_URL="URL to your backend"
+REACT_APP_EMAIL_CONFIG="email of the user "
+```
 Works and article only for the moment are taken from the api and then fetch to the page so that you can add your own works and articles without touching the code.
 we use React for the state management and creating component UI and custom css for the design we also use Boostrap and MDB
 
