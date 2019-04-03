@@ -15,8 +15,8 @@ export default class AboutPage extends Component {
                   </Row>
                 </Col>
                 <Col md="5">
-                  <h1 className="profile-title text-left">About Me</h1>
-                  <h3 className="profile-description text-left align-content-center">
+                  <h1 className="profile-title text-center">About Me</h1>
+                  <h3 className="profile-description text-center align-content-center">
                       I am a Full stack software Engineer and Web developer. <br/>
                     Passionate about Software, Mobile and Web development(Frontend and Backend), Game developments, Open source Ecosystems, Artificial Intelligent technologies and also passionate about sharing what i know.
                   </h3>
