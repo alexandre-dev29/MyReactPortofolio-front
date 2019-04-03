@@ -129,24 +129,26 @@ const all_skills = [
 
 const all_experiences= [
     {
-        experience_title: "Freelance  Web Developer at Wikisuit Groupware",
-        experience_periode: "July, 2013 - Present (4 years)",
-        experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
-    },
-    {
-        experience_title: "Consultant at Bralima SARL  ",
-        experience_periode: "July, 2013 - Present (4 years)",
-        experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
+        experience_title: "Full Stack  Web Developer at Wikisuite Groupware",
+        experience_periode: "2018 - Present ",
+        experience_description: "Working at Wikisuite has allowed me to gain a lot of experience in working remotely, and developing in an open source ecosystem. Collaborating with remote teams and this boosts your sense of collaboration even further."
     },
     {
         experience_title: "Game Developer At Badzone studio ",
-        experience_periode: "July, 2013 - Present (4 years)",
-        experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
+        experience_periode: "2017 - 2018",
+        experience_description: "This was probably one of the biggest and best work experiences, working in a gaming startup gives you a great sense of collaboration because you have to be in touch with graphic designers, level designers and content creators and you really need to be in good synchronization in order to evolve well. "
     },
+
+    {
+        experience_title: "Consultant at Bralima SARL ",
+        experience_periode: "2016 - 2017",
+        experience_description: "Bralima SARL being a brasserie, the different projects I worked on were those of tracking down the different delivery vehicles and managing customer requests. This allowed me to improve my skills in mobile development."
+    },
+
     {
         experience_title: "Software Developer at Gecamine S.A",
-        experience_periode: "July, 2013 - Present (4 years)",
-        experience_description: "Lorem ipsum dolor sit amet, consectetur adipiscingb elit. "
+        experience_periode: "2015 - 2016",
+        experience_description: "I was hired by Gecamine S.A to develop several own software such as attendance system, Equipment management, etc this give me great experience in software development"
     },
 
 ];
