@@ -33,10 +33,10 @@ export default class PageHeader extends Component {
                    I am a software engineer Passionate in Software And Web development.
                   </h4>
                   <div className="btn-wrapper mb-3">
-                    <Button className="btn btn-primary">
+                    <a href={require("../../assets/img/resumePage.png")} className="btn btn-primary" download>
                         <i className="tim-icons icon-cloud-download-93" />
                      Download Resume
-                    </Button>
+                    </a>
                   </div>
                   <div className="btn-wrapper">
                     <div className="button-container">
