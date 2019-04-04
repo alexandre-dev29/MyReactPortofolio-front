@@ -40,6 +40,15 @@ export default class PageHeader extends Component {
                   </div>
                   <div className="btn-wrapper">
                     <div className="button-container">
+                    <a
+                        className="btn-icon btn-simple btn-round btn-neutral"
+                        color="default"
+                        href="mailto:axelpersonal@axelmwenze.com?Subject=Contact"
+                        target="_top"
+                        rel="noopener noreferrer"
+                    >
+                        <i className="tim-icons icon-email-85" />
+                    </a>
                       <a
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
@@ -49,6 +58,7 @@ export default class PageHeader extends Component {
                       >
                         <i className="fab fa-linkedin" />
                       </a>
+
                       <a
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"

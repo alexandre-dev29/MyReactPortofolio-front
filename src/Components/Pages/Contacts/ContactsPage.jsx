@@ -56,6 +56,7 @@ export default class ContactsPage extends Component {
                   id="square8"
                   style={{ transform: this.state.squares7and8 }}
                 />
+
                 <ContactForm/>
               </Col>
 

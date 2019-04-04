@@ -137,11 +137,20 @@ class PagesNavbar extends React.Component {
                  Read Me
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="Contacts">
-                 Contacts
-                </NavLink>
-              </NavItem>
+              {/*<NavItem>*/}
+                {/*<NavLink tag={Link} to="Contacts">*/}
+                 {/*Contacts*/}
+                {/*</NavLink>*/}
+              {/*</NavItem>*/}
+                <a
+                    className="btn-icon btn-simple btn-round btn-success"
+                    color="default"
+                    href="mailto:axelpersonal@axelmwenze.com?Subject=Contact"
+                    target="_top"
+                    rel="noopener noreferrer"
+                >
+                    <i className="tim-icons icon-email-85" />
+                </a>
             </Nav>
           </Collapse>
         </Container>
